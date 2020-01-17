@@ -1,0 +1,268 @@
+body {
+  overflow-x: hidden;
+  /*overflow-y: scroll;*/
+  box-sizing: border-box;
+
+}
+
+header {
+  z-index: 1;
+  height: 65px;
+  display: inline-block;
+  text-align: right;
+  width: calc(99.25%);
+  background: rgba(255, 255, 255, 0.55);
+  padding-top: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+header>#phone-number {
+  display: inline-block;
+}
+
+header>#social-media {
+  display: inline-block;
+  width: 25%;
+}
+
+header>.burger {
+  display: none;
+  font-size: xx-large !important;
+}
+
+header>div#social-media>a {
+  font-size: xx-large;
+  padding: 5px 10px;
+  width: 100px;
+  color: black;
+  background: rgba(0, 0, 0, 0.25);
+  border: 5px solid rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  transition: 0.25s ease-in-out
+}
+
+header>div#social-media>a:hover {
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border: 5px solid rgba(0, 0, 0, 0.5);
+
+}
+
+header>div.links>a {
+  padding: 5px 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: right;
+  vertical-align: bottom;
+  width: 100px;
+  color: black;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  transition: 0.25s ease-in-out
+}
+
+header>div>a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+button>.fa {
+  -webkit-text-stroke: aliceblue;
+  -webkit-text-stroke-width: 1px;
+  font-size: 175px;
+  transition: 0.25s;
+}
+
+button>.fa:hover {
+  color: rgba(170, 170, 175, 0.75);
+}
+
+#imgcar {
+  background-image: url("../images/walrus-photo-1.jpg");
+  height: 50vh;
+  background-size: 100%;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+#logo,
+#slogan {
+  background: rgba(211, 211, 211, 0.7);
+  display: inline-block;
+}
+
+#logo {
+  text-align: center;
+  max-width: 600px;
+}
+
+.carOverlay {
+  text-align: center;
+  display: inline-block;
+  width: fit-content;
+}
+
+#sponsor {
+  max-width: 100%;
+}
+
+#left>button,
+#right>button {
+  background-color: rgba(0, 0, 0, .25);
+  border: none;
+}
+
+button {
+  background-color: transparent;
+  border: transparent
+}
+
+#caroCont {
+  position: relative;
+  top: 5rem;
+}
+
+a.link {
+  color: rgb(231, 231, 231);
+  background: darkgrey;
+  border: 1px solid grey;
+  padding: 1rem;
+  transition: 0.25s;
+  position: relative;
+  bottom: 8rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+a.link:hover {
+  color: white;
+  background: grey;
+  text-decoration: none;
+}
+
+footer {
+  background-color: lightgrey;
+  height: 105%;
+  /*margin-top: 1rem;*/
+}
+
+footer>div.links>a {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+footer>div#social-media {
+  background: lightgray;
+  width: 100%;
+  transition: 0.25s;
+}
+
+footer>div#social-media>a {
+  transition: 0.25s;
+}
+
+footer>div#social-media>a>.fa {
+  font-size: x-large;
+}
+
+.mobile-buttons {
+  display: none;
+}
+
+.desktop-buttons {
+  display: inline-block;
+  z-index: 5;
+  position: absolute;
+  top: 30%;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+button.box {
+  width: 18.5vw;
+  height: 18.5vw;
+  display: inline-block;
+  background-color: lightgrey;
+  box-sizing: border-box;
+}
+
+button.box>img {
+  width: 18.5vw;
+  height: 18.5vw;
+  display: inline-block;
+}
+
+img#modalImg {
+  width: 80%;
+}
+
+#general-bar {
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  #caroCont>div.col-md-2 {
+    display: none;
+  }
+
+  header>#social-media {
+    display: none;
+  }
+
+  header>.burger {
+    display: inline-block;
+  }
+
+  button>.fa {
+    font-size: xx-large;
+  }
+
+  header>div.links {
+    display: none;
+  }
+
+  img#modalImg {
+    width: 100%;
+  }
+
+  .mobile-buttons {
+    display: inline-block;
+  }
+
+  .mobile-buttons>button>.fa {
+    -webkit-text-stroke: aliceblue;
+    -webkit-text-stroke-width: 1px;
+    font-size: 175px;
+    transition: 0.25s;
+  }
+
+  .desktop-buttons {
+    display: none;
+  }
+
+  #general-bar {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  a.link {
+    color: rgb(231, 231, 231);
+    background: darkgrey;
+    border: 1px solid grey;
+    padding: 0.5rem;
+    transition: 0.25s;
+    position: unset;
+    margin: 0;
+  }
+  #a-links-container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-bottom: 1rem;
+  }
+}
